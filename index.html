@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Nouran Ahmed Khalifa | Software Engineer & Backend Developer</title>
+  <meta name="description" content="Portfolio of Nouran Ahmed Khalifa — Backend-focused Software Engineer based in Cairo, Egypt. Specializing in Python, FastAPI, REST APIs, Databases, and AI-powered applications.">
+  <meta name="keywords" content="Nouran Ahmed Khalifa, Software Engineer, Backend Developer, Python, FastAPI, REST APIs, PostgreSQL, Cairo Egypt, CVision, Software Testing, ISTQB">
+  <meta name="author" content="Nouran Ahmed Khalifa">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Nouran Ahmed Khalifa | Software Engineer & Backend Developer">
+  <meta property="og:description" content="Backend-focused Software Engineer passionate about building reliable, scalable applications, REST APIs, and AI-powered products.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Structured Data JSON-LD for Recruiters & Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nouran Ahmed Khalifa",
+    "jobTitle": "Software Engineer | Backend Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cairo",
+      "addressCountry": "Egypt"
+    },
+    "email": "mailto:nourankhalifa15@gmail.com",
+    "telephone": "+201014750232",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Cairo University, Faculty of Computers & Artificial Intelligence"
+    },
+    "knowsAbout": ["Python", "FastAPI", "REST APIs", "PostgreSQL", "React", "React Native", "Expo", "AI Systems", "Software Testing", "ISTQB"]
+  }
+  </script>
+
+  <!-- Google Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       STICKY NAVIGATION BAR
+       ================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Nouran Khalifa Home">
+        <div class="monogram">&lt;NK/&gt;</div>
+        <div class="brand-text">
+          <span class="brand-name">Nouran Khalifa</span>
+          <span class="brand-role">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- 15-Second Recruiter Fast-Check CTA -->
+        <button class="recruiter-chip-btn open-recruiter-modal" title="Quick recruiter overview">
+          <span class="dot-pulse"></span>
+          <span>Recruiter Summary</span>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Switch theme">
+          <span id="themeIcon">
+            <!-- Sun Icon (Default Dark) -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Download CV / Resume -->
+        <a href="Nouran.khalifa_cv.pdf" target="_blank" class="nav-cta-btn" download title="Download Nouran's Resume">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>CV</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =================================================================
+       MAIN CONTENT
+       ================================================================= -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          
+          <!-- Availability / Role Badge -->
+          <div class="hero-status-badge">
+            <span class="badge-ping"></span>
+            <span>Available for Software Engineering &amp; Backend Roles</span>
+          </div>
+
+          <h1 class="hero-name">Nouran Ahmed Khalifa</h1>
+
+          <div class="hero-headline">
+            <span>Software Engineer</span>
+            <span style="color: var(--accent-primary);">/</span>
+            <span class="headline-highlight">Backend Developer</span>
+          </div>
+
+          <p class="hero-supporting-text">
+            Backend-focused Software Engineer passionate about building reliable, scalable applications, REST APIs, and AI-powered products.
+          </p>
+
+          <!-- Core Competency Badges -->
+          <div class="hero-tech-highlights">
+            <span class="tech-pill primary">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Backend Development
+            </span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">REST APIs</span>
+            <span class="tech-pill">Databases &amp; PostgreSQL</span>
+            <span class="tech-pill">AI-Powered Applications</span>
+            <span class="tech-pill">Web &amp; Mobile (React / Expo)</span>
+            <span class="tech-pill">Software Testing &amp; QA</span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <a href="Nouran.khalifa_cv.pdf" target="_blank" class="btn-outline" download>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social and Contact Quick Links -->
+          <div class="hero-socials">
+            <a href="https://github.com/nourankhaliifa" target="_blank" rel="noopener noreferrer" class="social-link" title="Nouran's GitHub Profile">
+              <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link placeholder-link" data-placeholder-label="LinkedIn">
+              <svg class="social-icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:nourankhalifa15@gmail.com" class="social-link">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+            <span class="social-link" style="cursor: default;">
+              <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Cairo, Egypt</span>
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Hero Terminal Visual (Engineered aesthetic) -->
+        <div class="hero-visual reveal delay-1">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title">
+                <span>api.nouran.dev/v1/health</span>
+              </div>
+              <span class="terminal-badge">200 OK • 24ms</span>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-line cmd">
+                <span class="terminal-prompt">$</span>
+                <span>curl -X GET /v1/engineer/profile</span>
+              </div>
+
+              <div class="terminal-json">
+                <div>{</div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"name"</span>: <span class="json-str">"Nouran Ahmed Khalifa"</span>,
+                </div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"role"</span>: <span class="json-str">"Software Engineer | Backend Developer"</span>,
+                </div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"location"</span>: <span class="json-str">"Cairo, Egypt"</span>,
+                </div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"primary_stack"</span>: [
+                    <span class="json-str">"Python"</span>, 
+                    <span class="json-str">"FastAPI"</span>, 
+                    <span class="json-str">"PostgreSQL"</span>, 
+                    <span class="json-str">"REST APIs"</span>
+                  ],
+                </div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"flagship_project"</span>: <span class="json-str">"CVision (AI Recruitment Platform)"</span>,
+                </div>
+                <div style="padding-left: 1.2rem;">
+                  <span class="json-key">"status"</span>: <span class="json-str">"Open for Graduate &amp; Junior SE Roles"</span>
+                </div>
+                <div>}</div>
+              </div>
+
+              <div class="terminal-line" style="color: #64748b; font-size: 0.75rem;">
+                <span>// Architecture: FastAPI + PostgreSQL + Supabase + Gemini AI</span>
+              </div>
+
+              <div class="terminal-stats">
+                <div class="stat-box">
+                  <span class="stat-label">Architecture</span>
+                  <span class="stat-val">RESTful / OOP</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Quality Assured</span>
+                  <span class="stat-val">ISTQB® CTFL</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-label">Education</span>
+                  <span class="stat-val">Cairo Univ. FCAI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECRUITER 15-SECOND FAST SUMMARY BAR -->
+    <div class="container">
+      <div class="recruiter-summary-bar reveal">
+        <div class="summary-bar-header">
+          <div class="summary-bar-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>15-Second Recruiter Summary</span>
+          </div>
+          <span class="summary-bar-badge">Quick Review</span>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <span class="item-label">Target Positions</span>
+            <span class="item-value">Software Engineer</span>
+            <span class="item-sub">Backend Developer / Junior / Graduate</span>
+          </div>
+          <div class="summary-item">
+            <span class="item-label">Education &amp; Academic</span>
+            <span class="item-value">B.Sc. Software Engineering</span>
+            <span class="item-sub">Cairo University, FCAI (GPA: 3.0/4.0)</span>
+          </div>
+          <div class="summary-item">
+            <span class="item-label">Core Technical Stack</span>
+            <span class="item-value">Python • FastAPI • PostgreSQL</span>
+            <span class="item-sub">REST APIs • Gemini AI • React / Expo</span>
+          </div>
+          <div class="summary-item">
+            <span class="item-label">Industry &amp; QA Exposure</span>
+            <span class="item-value">EgyProperty Intern &amp; ISTQB®</span>
+            <span class="item-sub">Software Testing, CRM &amp; App Validation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Practical Experience &amp; Technical Foundation</h2>
+          <p class="section-subtitle">
+            An early-career Software Engineer dedicated to writing dependable backend code, architecting clean APIs, and turning complex ideas into functional products.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Narrative & Pillars -->
+          <div class="about-narrative reveal">
+            <p class="about-intro-lead">
+              I am a backend-focused Software Engineer with hands-on experience developing web and mobile applications using Python, Expo, and REST APIs.
+            </p>
+            <p class="about-text">
+              I enjoy solving technical problems, learning new technologies, and turning ideas into practical software solutions. My engineering approach couples clean modular code with thorough verification to ensure software reliability from data model to endpoint.
+            </p>
+
+            <!-- 4 Core Foundations -->
+            <div class="about-pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3 class="pillar-title">Backend &amp; API Design</h3>
+                <p class="pillar-desc">Designing robust RESTful interfaces, data serialization, and role-based access controls with FastAPI.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                </div>
+                <h3 class="pillar-title">Databases &amp; Modeling</h3>
+                <p class="pillar-desc">Relational and document storage using PostgreSQL, SQL queries, and Supabase integration.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h3 class="pillar-title">Software Testing &amp; QA</h3>
+                <p class="pillar-desc">Certified ISTQB® foundation, automated testing with Pytest, and real-world mobile app validation.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                </div>
+                <h3 class="pillar-title">AI System Integration</h3>
+                <p class="pillar-desc">Harnessing LLM APIs (Google Gemini) for real-world automated parsing, ATS scoring, and roadmaps.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Education Card -->
+          <div class="education-card reveal delay-1">
+            <div class="education-header">
+              <div class="edu-badge-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div>
+                <h3 class="edu-title">Bachelor of Science</h3>
+                <div class="edu-institution">Cairo University</div>
+                <div class="edu-faculty">Faculty of Computers &amp; Artificial Intelligence</div>
+              </div>
+            </div>
+
+            <div class="edu-meta-tags">
+              <span class="meta-chip">Major: Software Engineering</span>
+              <span class="meta-chip">2022 – 2026</span>
+              <span class="meta-chip gpa">GPA: 3.0 / 4.0 – Very Good</span>
+            </div>
+
+            <ul class="edu-highlights">
+              <li>Comprehensive core curriculum in Data Structures, Algorithms, Software Engineering, and Object-Oriented Programming (OOP).</li>
+              <li>Hands-on systems training across Database Systems, Software Testing &amp; Quality Assurance, and System Architecture.</li>
+              <li>Graduation Project: CVision — AI-Powered Resume Assistant &amp; Recruitment Platform (FastAPI, React, Expo, Gemini AI).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DEVELOPER STACK VISUALIZATION (Engineering Ecosystem Pipelines) -->
+        <div style="margin-top: 4.5rem;" class="reveal">
+          <div class="section-header" style="margin-bottom: 2rem;">
+            <span class="section-tag">Engineering Ecosystem</span>
+            <h3 class="section-title" style="font-size: 1.85rem;">Developer Stack Pipelines</h3>
+            <p class="section-subtitle">A cohesive engineering workflow connecting interfaces, secure APIs, cloud databases, and automated testing.</p>
+          </div>
+
+          <div class="stack-pipeline-grid">
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>Backend Core</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">Python</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">FastAPI</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">REST APIs</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">PostgreSQL</span>
+              </div>
+              <p class="pipeline-desc">Asynchronous API endpoints, Pydantic data schemas, relational persistence, and clean domain layers.</p>
+            </div>
+
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>Client Platforms</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">React</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">React Native</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">Expo</span>
+              </div>
+              <p class="pipeline-desc">Cross-platform web and mobile applications with responsive UI/UX and seamless state synchronization.</p>
+            </div>
+
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>Security &amp; Auth</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">JWT</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">OAuth 2.0</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">RBAC</span>
+              </div>
+              <p class="pipeline-desc">Token-based authentication, role-based authorization for candidates, recruiters, and admins.</p>
+            </div>
+
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>DevOps &amp; Tools</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">Git</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">GitHub</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">Docker</span>
+              </div>
+              <p class="pipeline-desc">Version control, collaborative workflows, containerized service execution, and Linux CLI administration.</p>
+            </div>
+
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>AI Engineering</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">Gemini API</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">Prompt Tuning</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">AI Features</span>
+              </div>
+              <p class="pipeline-desc">Automated resume parsing, intelligent ATS match scoring, career roadmaps, and structured JSON outputs.</p>
+            </div>
+
+            <div class="pipeline-card">
+              <div class="pipeline-category">
+                <span>Quality &amp; Testing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+              </div>
+              <div class="pipeline-flow">
+                <span class="flow-node">Pytest</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">API Verification</span>
+                <span class="flow-arrow">&rarr;</span>
+                <span class="flow-node">QA Standard</span>
+              </div>
+              <p class="pipeline-desc">Automated test suites for endpoints, regressions, functional validation, and ISTQB-guided QA workflows.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section id="skills" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technology Stack</h2>
+          <p class="section-subtitle">
+            An organized overview of programming languages, frameworks, database systems, testing methodologies, and tools.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-container reveal">
+          <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="languages">Languages</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend &amp; APIs</button>
+          <button class="skill-filter-btn" data-filter="databases">Databases</button>
+          <button class="skill-filter-btn" data-filter="testing">Testing &amp; QA</button>
+          <button class="skill-filter-btn" data-filter="frontend">Frontend &amp; Mobile</button>
+          <button class="skill-filter-btn" data-filter="tools">Tools &amp; DevOps</button>
+          <button class="skill-filter-btn" data-filter="design">Design &amp; Productivity</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid">
+          
+          <!-- Programming Languages -->
+          <div class="skill-category-card reveal" data-category="languages">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+              <span class="category-count">6 Technologies</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">Prolog</span>
+              <span class="skill-badge">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="skill-category-card reveal" data-category="backend">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3 class="category-title">Backend Development</h3>
+              <span class="category-count">Core Focus</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">FastAPI</span>
+              <span class="skill-badge">Spring Boot</span>
+              <span class="skill-badge">REST APIs</span>
+              <span class="skill-badge">OOP</span>
+            </div>
+          </div>
+
+          <!-- Authentication & APIs -->
+          <div class="skill-category-card reveal" data-category="apis">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <h3 class="category-title">Authentication &amp; APIs</h3>
+              <span class="category-count">Security</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">JWT</span>
+              <span class="skill-badge">OAuth 2.0</span>
+              <span class="skill-badge">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category-card reveal" data-category="databases">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="category-title">Databases</h3>
+              <span class="category-count">Storage</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">SQL</span>
+              <span class="skill-badge">MongoDB</span>
+            </div>
+          </div>
+
+          <!-- Testing & QA -->
+          <div class="skill-category-card reveal" data-category="testing">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3 class="category-title">Testing &amp; QA</h3>
+              <span class="category-count">Reliability</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">Manual Testing</span>
+              <span class="skill-badge">Automation Testing</span>
+              <span class="skill-badge">Functional Testing</span>
+              <span class="skill-badge">Regression Testing</span>
+              <span class="skill-badge">Pytest</span>
+            </div>
+          </div>
+
+          <!-- Frontend & Mobile -->
+          <div class="skill-category-card reveal" data-category="frontend">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              </div>
+              <h3 class="category-title">Frontend &amp; Mobile</h3>
+              <span class="category-count">Client Tier</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">React.js</span>
+              <span class="skill-badge">React Native</span>
+              <span class="skill-badge">Expo</span>
+              <span class="skill-badge">UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skill-category-card reveal" data-category="tools">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="category-title">Tools &amp; Technologies</h3>
+              <span class="category-count">Environment</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Supabase</span>
+              <span class="skill-badge">Jira</span>
+              <span class="skill-badge">Linux</span>
+            </div>
+          </div>
+
+          <!-- Design & Productivity -->
+          <div class="skill-category-card reveal" data-category="design">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+              </div>
+              <h3 class="category-title">Design &amp; Productivity</h3>
+              <span class="category-count">Creative &amp; Office</span>
+            </div>
+            <div class="skill-tags-wrapper">
+              <span class="skill-badge">UI/UX</span>
+              <span class="skill-badge">Adobe Illustrator</span>
+              <span class="skill-badge">Adobe After Effects</span>
+              <span class="skill-badge">Adobe Premiere Pro</span>
+              <span class="skill-badge">Microsoft Office</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECT — CVISION (SHOWPIECE CASE STUDY) -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Project</span>
+          <h2 class="section-title">CVision &mdash; Flagship Engineering Showcase</h2>
+          <p class="section-subtitle">
+            An in-depth case study of my graduation project: a multi-tier, AI-powered recruitment platform designed for candidates and recruiters.
+          </p>
+        </div>
+
+        <div class="featured-project-container reveal">
+          
+          <!-- Project Top Hero Banner -->
+          <div class="featured-project-hero">
+            <div>
+              <div class="project-meta-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>Graduation Project • Cairo University (2026)</span>
+              </div>
+              <h3 class="project-title">CVision – AI-Powered Resume Assistant &amp; Recruitment Platform</h3>
+              <p class="project-subtitle">"Turn your resume into a job-winning strategy."</p>
+              <p class="project-description">
+                CVision is an AI-powered recruitment platform designed to help candidates build, analyze, and improve their resumes while helping recruiters streamline candidate evaluation and recruitment workflows.
+              </p>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-tech-stack-row">
+                <span class="tech-pill primary">FastAPI</span>
+                <span class="tech-pill primary">PostgreSQL</span>
+                <span class="tech-pill primary">Google Gemini API</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">React Native</span>
+                <span class="tech-pill">Expo</span>
+                <span class="tech-pill">Supabase</span>
+                <span class="tech-pill">RESTful APIs</span>
+                <span class="tech-pill">JWT &amp; OAuth 2.0</span>
+                <span class="tech-pill">Pytest</span>
+              </div>
+
+              <!-- Project Action Buttons -->
+              <div class="project-action-buttons">
+                <button class="btn-primary case-tab-btn-jump" onclick="document.querySelector('[data-tab=tab-architecture]').click()">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  <span>Explore Architecture</span>
+                </button>
+                <a href="https://github.com/nourankhaliifa/nourankhalifa" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="CVision Repository on GitHub">
+                  <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+                <a href="#demo" class="btn-outline placeholder-link" data-placeholder-label="CVision Live Demo">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Mockup Card -->
+            <div class="project-media-wrapper">
+              <img src="assets/cvision-dashboard.jpg" alt="CVision AI-Powered Recruitment Platform Dashboard" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Case Study Navigation Tabs -->
+          <div class="case-study-nav">
+            <button class="case-tab-btn active" data-tab="tab-overview">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>Problem &amp; Solution</span>
+            </button>
+            <button class="case-tab-btn" data-tab="tab-architecture">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              <span>System Architecture &amp; AI Flow</span>
+            </button>
+            <button class="case-tab-btn" data-tab="tab-features">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>Platform Features</span>
+            </button>
+            <button class="case-tab-btn" data-tab="tab-role">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>My Technical Role</span>
+            </button>
+          </div>
+
+          <!-- Case Study Panes -->
+          <div class="case-study-content">
+
+            <!-- Tab 1: Overview (Problem & Solution) -->
+            <div id="tab-overview" class="tab-pane active">
+              <div class="case-grid-two-col">
+                <div class="case-card">
+                  <h4 class="case-card-title">
+                    <span style="color: #f87171;">●</span>
+                    The Problem
+                  </h4>
+                  <p class="case-card-body" style="margin-bottom: 1rem;">
+                    Job seekers often struggle with passing automated Applicant Tracking Systems (ATS) and lack transparent insight into their skill deficiencies compared to target role descriptions.
+                  </p>
+                  <p class="case-card-body">
+                    Concurrently, recruiters face high overhead manually sorting through unstandardized resumes, leading to inefficient candidate evaluation and prolonged hiring cycles.
+                  </p>
+                </div>
+
+                <div class="case-card">
+                  <h4 class="case-card-title">
+                    <span style="color: #34d399;">●</span>
+                    The Solution
+                  </h4>
+                  <p class="case-card-body" style="margin-bottom: 1rem;">
+                    CVision provides an end-to-end ecosystem combining intelligent resume creation, automated AI analysis, personalized career roadmaps, and recruiter evaluation tools into a single platform.
+                  </p>
+                  <p class="case-card-body">
+                    Candidates receive actionable ATS scores and tailored skill gap roadmaps, while recruiters access a centralized workflow to evaluate matching applicants with role-based access.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Architecture & AI Pipeline -->
+            <div id="tab-architecture" class="tab-pane">
+              <div class="architecture-container">
+                <div>
+                  <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">
+                    1. End-to-End System Architecture
+                  </h4>
+                  <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    High-level decoupling: client interfaces communicate through secure REST endpoints to a FastAPI backend service layer, persisted in PostgreSQL &amp; Supabase.
+                  </p>
+                  
+                  <div class="arch-flow-diagram">
+                    <div class="arch-stage-row">
+                      <div class="arch-node">
+                        <div class="node-type">Client Tier</div>
+                        <div class="node-title">React Web &amp; Expo Mobile</div>
+                        <div class="node-desc">Candidate &amp; Recruiter UIs</div>
+                      </div>
+
+                      <div class="arch-connector">
+                        <span>HTTPS</span>
+                        &rarr;
+                      </div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Gateway &amp; Auth</div>
+                        <div class="node-title">REST API / JWT</div>
+                        <div class="node-desc">OAuth 2.0 &amp; RBAC Security</div>
+                      </div>
+
+                      <div class="arch-connector">
+                        <span>Pydantic</span>
+                        &rarr;
+                      </div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Application Server</div>
+                        <div class="node-title">FastAPI Backend</div>
+                        <div class="node-desc">Services &amp; Pytest Validated</div>
+                      </div>
+
+                      <div class="arch-connector">
+                        <span>SQL</span>
+                        &rarr;
+                      </div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Data Layer</div>
+                        <div class="node-title">PostgreSQL / Supabase</div>
+                        <div class="node-desc">Relational Models &amp; Storage</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                  <h4 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">
+                    2. Google Gemini AI Analysis Pipeline
+                  </h4>
+                  <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                    How candidate resumes undergo semantic processing, scoring, and recommendation generation.
+                  </p>
+                  
+                  <div class="arch-flow-diagram">
+                    <div class="arch-stage-row">
+                      <div class="arch-node">
+                        <div class="node-type">Input</div>
+                        <div class="node-title">Candidate Resume</div>
+                        <div class="node-desc">PDF or Structured Form Data</div>
+                      </div>
+
+                      <div class="arch-connector">&rarr;</div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Parsing</div>
+                        <div class="node-title">Text &amp; Entity Extractor</div>
+                        <div class="node-desc">Section Sanitization</div>
+                      </div>
+
+                      <div class="arch-connector">&rarr;</div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Inference</div>
+                        <div class="node-title">Gemini AI Model</div>
+                        <div class="node-desc">Prompt Engineering &amp; JSON</div>
+                      </div>
+
+                      <div class="arch-connector">&rarr;</div>
+
+                      <div class="arch-node">
+                        <div class="node-type">Output</div>
+                        <div class="node-title">ATS Feedback &amp; Roadmaps</div>
+                        <div class="node-desc">Skill Gaps &amp; Job Matches</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Key Features -->
+            <div id="tab-features" class="tab-pane">
+              <div class="feature-cards-grid">
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    <span>AI Resume Analysis</span>
+                  </div>
+                  <p class="feature-box-desc">Automated extraction and contextual scoring against real job requirements.</p>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    <span>ATS Feedback &amp; Scoring</span>
+                  </div>
+                  <p class="feature-box-desc">Actionable feedback on keyword optimization, structure, and formatting.</p>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    <span>Skill Gap Analysis</span>
+                  </div>
+                  <p class="feature-box-desc">Clear comparisons highlighting missing tools, skills, or certifications for target roles.</p>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                    <span>Career Roadmaps</span>
+                  </div>
+                  <p class="feature-box-desc">Step-by-step milestones to help candidates build technical readiness efficiently.</p>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    <span>Job Recommendations</span>
+                  </div>
+                  <p class="feature-box-desc">Automated matching algorithm pairing candidate profiles with relevant listings.</p>
+                </div>
+
+                <div class="feature-box">
+                  <div class="feature-box-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <span>Role-Based Access</span>
+                  </div>
+                  <p class="feature-box-desc">Dedicated portals for Candidate, Recruiter, and Administrator permissions.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: My Role & Technical Details -->
+            <div id="tab-role" class="tab-pane">
+              <div class="case-grid-two-col">
+                <div class="case-card">
+                  <h4 class="case-card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    Backend &amp; API Responsibilities
+                  </h4>
+                  <ul class="case-list">
+                    <li>Architected and implemented RESTful API endpoints using FastAPI for resume processing, candidate profiles, and recruiter queries.</li>
+                    <li>Designed relational schemas in PostgreSQL and integrated Supabase for persistent data storage and authentication flows.</li>
+                    <li>Implemented secure token-based authentication with JWT and OAuth 2.0 supporting role-based access for candidates, recruiters, and admins.</li>
+                    <li>Integrated Google Gemini API to parse resumes, generate structured ATS evaluations, and provide skill gap recommendations.</li>
+                    <li>Developed automated backend test suites using Pytest to validate endpoints and data integrity.</li>
+                  </ul>
+                </div>
+
+                <div class="case-card">
+                  <h4 class="case-card-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    Cross-Platform Web &amp; Mobile
+                  </h4>
+                  <ul class="case-list">
+                    <li>Contributed to developing the web platform using React with intuitive candidate and recruiter views.</li>
+                    <li>Developed mobile application screens using React Native with Expo for candidate on-the-go resume management.</li>
+                    <li>Synchronized frontend state with backend REST APIs ensuring consistent data contracts and responsive error handling.</li>
+                    <li>Conducted functional testing across web and mobile viewports to guarantee cross-device reliability.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE SECTION (TIMELINE) -->
+    <section id="experience" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Work Experience</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            Hands-on internship experience in real-world software testing, CRM troubleshooting, and business operations.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Testing &amp; CRM Support Intern</h3>
+                  <div class="timeline-company">EgyProperty</div>
+                </div>
+                <div class="timeline-meta">
+                  <span>10/2025 – 02/2026</span>
+                  <span>•</span>
+                  <span>Cairo, Egypt</span>
+                </div>
+              </div>
+
+              <!-- High-value exposure banner -->
+              <div class="timeline-pill-summary">
+                <span>Software Testing</span>
+                <span>•</span>
+                <span>QA Validation</span>
+                <span>•</span>
+                <span>CRM Management</span>
+                <span>•</span>
+                <span>Technical Support</span>
+                <span>•</span>
+                <span>Real-World Business Operations</span>
+              </div>
+
+              <ul class="timeline-responsibilities">
+                <li>Performed data entry and maintained website content while ensuring data accuracy and consistency across live systems.</li>
+                <li>Tested the company's mobile application, identified functional issues, and validated application behavior across user workflows.</li>
+                <li>Troubleshot sales-related issues through the CRM and collaborated with cross-functional teams to improve operational workflows.</li>
+                <li>Created training videos and user guides to facilitate CRM adoption and train internal staff.</li>
+                <li>Provided technical support and guidance to end users, improving daily operations and user experience.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. LEADERSHIP / EXTRACURRICULAR -->
+        <div style="margin-top: 3.5rem;" class="reveal">
+          <div class="leadership-card">
+            <div class="leadership-meta">
+              <span class="leadership-badge">Extracurricular Leadership</span>
+              <h3 class="leadership-org">Enactus &ndash; Cairo University</h3>
+              <div class="leadership-role">Co-Leader, Visuals Team</div>
+              <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6;">
+                Enactus is a global student organization focused on developing entrepreneurial solutions to address social challenges. As Co-Leader of the Visuals Team, I applied visual communication and business principles to create sustainable community impact.
+              </p>
+            </div>
+
+            <div class="leadership-highlights-grid">
+              <div class="lead-box">
+                <div class="lead-box-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                  <span>Team Leadership</span>
+                </div>
+                <p class="lead-box-desc">Co-led visuals team members, coordinating deliverables for campaigns and competitions.</p>
+              </div>
+
+              <div class="lead-box">
+                <div class="lead-box-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <span>Fundraising &amp; Sponsorships</span>
+                </div>
+                <p class="lead-box-desc">Collaborated with team members to organize fundraising events and secure sponsorships from local businesses.</p>
+              </div>
+
+              <div class="lead-box">
+                <div class="lead-box-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <span>Visual Communication</span>
+                </div>
+                <p class="lead-box-desc">Designed clear visual media to communicate complex social enterprise models effectively.</p>
+              </div>
+
+              <div class="lead-box">
+                <div class="lead-box-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-indigo)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  <span>Entrepreneurial Mindset</span>
+                </div>
+                <p class="lead-box-desc">Applied business principles to devise sustainable, scalable solutions for pressing social issues.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS SECTION -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Verified Credentials</span>
+          <h2 class="section-title">Certifications &amp; Technical Training</h2>
+          <p class="section-subtitle">
+            Industry and academy certifications spanning software testing, containerization, enterprise Java EE, and Linux administration.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- ISTQB -->
+          <div class="cert-card reveal">
+            <div class="cert-badge-row">
+              <span class="issuer-tag">ITIDA / ISTQB®</span>
+              <span class="year-tag">2025</span>
+            </div>
+            <h3 class="cert-title">ISTQB® Certified Tester Foundation Level (CTFL)</h3>
+            <p class="cert-desc">
+              Demonstrates rigorous understanding of software testing fundamentals, test design techniques, defect lifecycle, and quality assurance principles.
+            </p>
+          </div>
+
+          <!-- Red Hat OpenShift & Podman -->
+          <div class="cert-card reveal delay-1">
+            <div class="cert-badge-row">
+              <span class="issuer-tag">Cairo University / Red Hat</span>
+              <span class="year-tag">2025</span>
+            </div>
+            <h3 class="cert-title">Red Hat OpenShift: Introduction to Containers with Podman – Ver. 4.14</h3>
+            <p class="cert-desc">
+              Built and deployed a full-stack Angular, Python, and MongoDB application using Podman, OpenShift, and automated CI/CD pipelines.
+            </p>
+          </div>
+
+          <!-- Red Hat Java EE -->
+          <div class="cert-card reveal delay-2">
+            <div class="cert-badge-row">
+              <span class="issuer-tag">Cairo University / Red Hat</span>
+              <span class="year-tag">2025</span>
+            </div>
+            <h3 class="cert-title">Red Hat Application Development I: Programming in Java EE 7.0</h3>
+            <p class="cert-desc">
+              Completed Java EE training and built enterprise applications and REST APIs thoroughly tested and verified with Postman.
+            </p>
+          </div>
+
+          <!-- Red Hat System Administration -->
+          <div class="cert-card reveal delay-3">
+            <div class="cert-badge-row">
+              <span class="issuer-tag">Cairo University / Red Hat</span>
+              <span class="year-tag">2025</span>
+            </div>
+            <h3 class="cert-title">Red Hat System Administration 9.3</h3>
+            <p class="cert-desc">
+              Covered Red Hat Linux system administration fundamentals, file system operations, process management, and CLI environment management.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ENGINEERING MINDSET (4 PILLARS) -->
+    <section style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Philosophy</span>
+          <h2 class="section-title">Engineering Mindset</h2>
+          <p class="section-subtitle">
+            The core principles that shape my approach to designing systems, collaborating with peers, and delivering software.
+          </p>
+        </div>
+
+        <div class="mindset-grid">
+          <div class="mindset-card reveal">
+            <div class="mindset-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <h3 class="mindset-title">Problem Solving</h3>
+            <p class="mindset-desc">Breaking complex problems into practical, maintainable, and modular software solutions.</p>
+          </div>
+
+          <div class="mindset-card reveal delay-1">
+            <div class="mindset-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3 class="mindset-title">Continuous Learning</h3>
+            <p class="mindset-desc">Exploring new technologies and applying them rapidly through real projects and experimentation.</p>
+          </div>
+
+          <div class="mindset-card reveal delay-2">
+            <div class="mindset-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="mindset-title">Quality &amp; Reliability</h3>
+            <p class="mindset-desc">Understanding the vital importance of testing, reliability, and clean software engineering practices.</p>
+          </div>
+
+          <div class="mindset-card reveal delay-3">
+            <div class="mindset-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="mindset-title">Collaboration</h3>
+            <p class="mindset-desc">Working effectively and empathetically with technical and non-technical team members alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Narrative & Info -->
+          <div class="contact-info-col reveal">
+            <div>
+              <span class="section-tag">Get in Touch</span>
+              <h2 class="contact-headline">Let's Build Something Great</h2>
+            </div>
+
+            <p class="contact-text">
+              I'm currently open to opportunities where I can grow as a Software Engineer, contribute to meaningful products, and continue building strong backend and software engineering skills.
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:nourankhalifa15@gmail.com" class="contact-val">nourankhalifa15@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="nourankhalifa15@gmail.com" title="Copy email address">Copy</button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Location</span>
+                  <span class="contact-val">Cairo, Egypt</span>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-card-item">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+201014750232" class="contact-val">+20 101 475 0232</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Profile Links -->
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-secondary placeholder-link" data-placeholder-label="LinkedIn Profile">
+                <svg class="social-icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/nourankhaliifa" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Nouran's GitHub Profile">
+                <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="Nouran.khalifa_cv.pdf" target="_blank" class="btn-secondary" download>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>PDF Resume</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card reveal delay-1">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary);">
+              Send a Direct Message
+            </h3>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="formName" class="form-label">Your Name</label>
+                <input type="text" id="formName" class="form-control" placeholder="e.g. John Doe / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Email Address</label>
+                <input type="email" id="formEmail" class="form-control" placeholder="e.g. john@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject" class="form-label">Subject / Role Opportunity</label>
+                <input type="text" id="formSubject" class="form-control" placeholder="e.g. Backend Engineer Role / Project Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Message</label>
+                <textarea id="formMessage" class="form-control" rows="4" placeholder="Hello Nouran, I saw your work on CVision and would love to discuss a Software Engineering opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="nav-brand">
+          <div class="monogram">&lt;NK/&gt;</div>
+          <div class="brand-text">
+            <span class="brand-name">Nouran Ahmed Khalifa</span>
+            <span class="brand-role">Software Engineer | Backend Developer</span>
+          </div>
+        </a>
+
+        <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">CVision</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>&copy; 2026 Nouran Ahmed Khalifa. All rights reserved.</span>
+          <span style="display: block; font-size: 0.75rem; margin-top: 0.25rem;">Built for Software Engineering &amp; Backend Excellence.</span>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <!-- Live Automated QA Test Trigger Button -->
+          <button class="trigger-qa-suite" style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.3); color: #34d399; padding: 0.45rem 0.85rem; border-radius: var(--radius-sm); font-size: 0.75rem; font-family: var(--font-mono); cursor: pointer; display: flex; align-items: center; gap: 0.4rem;" title="Run live automated QA tests">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <span>Run QA Test Suite</span>
+          </button>
+
+          <button id="backToTopBtn" class="back-to-top-btn" title="Back to top">
+            <span>Back to Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       RECRUITER 15-SECOND QUICK MODAL / CHEAT SHEET
+       ================================================================= -->
+  <div id="recruiterModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title" id="modalTitle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <span>Recruiter Quick Evaluation (15-Second Snapshot)</span>
+        </div>
+        <button id="closeRecruiterModal" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-recruiter-grid">
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Candidate Name</div>
+            <div class="fact-val">Nouran Ahmed Khalifa</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Target Positions</div>
+            <div class="fact-val">Software Engineer, Backend Developer, Junior SE</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Education</div>
+            <div class="fact-val">B.Sc. Software Engineering, Cairo University (FCAI)</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Graduation &amp; GPA</div>
+            <div class="fact-val">2022–2026 • GPA: 3.0 / 4.0 (Very Good)</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Primary Backend Core</div>
+            <div class="fact-val">Python, FastAPI, REST APIs, PostgreSQL, Supabase</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">Client Platforms</div>
+            <div class="fact-val">React, React Native, Expo</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">AI Integration</div>
+            <div class="fact-val">Google Gemini API, Prompt Engineering, ATS Scoring</div>
+          </div>
+          <div class="recruiter-fact-box">
+            <div class="fact-label">QA &amp; Verification</div>
+            <div class="fact-val">ISTQB® CTFL Certified, Pytest Automated Testing</div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+          <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 0.35rem;">
+            FLAGSHIP PROJECT: CVISION
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.55;">
+            Developed an AI-powered resume analysis &amp; recruitment platform with FastAPI, PostgreSQL, Gemini AI, and React Native. Includes ATS feedback, role-based access for recruiters/candidates, and full Pytest validation.
+          </p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary copy-btn" data-copy="nourankhalifa15@gmail.com">Copy Email</button>
+        <a href="Nouran.khalifa_cv.pdf" target="_blank" class="btn-primary" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download Full Resume</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       AUTOMATED QA TEST RESULTS MODAL
+       ================================================================= -->
+  <div id="qaTestModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="qaModalTitle">
+    <div class="modal-container" style="max-width: 620px;">
+      <div class="modal-header">
+        <div class="modal-title" id="qaModalTitle">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Automated QA Regression Suite</span>
+        </div>
+        <button id="closeQaModal" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div style="font-size: 0.8125rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 0.5rem;">
+          EXECUTING IN-BROWSER ASSERTIONS (ISTQB® / PYTEST SPECIFICATION):
+        </div>
+        <div id="qaTestResults" style="display: flex; flex-direction: column; gap: 0.3rem;"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-primary" onclick="window.runAutomatedQATests()">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+          <span>Re-run Suite</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
